@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>O Dragonborn</title>
+	<link rel="shortcut icon" href="imagens/icone.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<a href="index.html" title="Home">
+			<img src="imagens/logo.webp" alt="Dragonborn" title="Dragonborn">
+		</a>
+
+		<a href="javascript:mostrarmenu()" class="menu">
+			<i class="fas fa-bars"></i>
+		</a>
+
+		<nav>
+			<ul>
+			<li>
+				<a href="index.html" title="home">
+					<i class="fas fa-home"></i>
+					Home
+				</a>
+			</li>
+			<li>
+				<a href="contato.html" title="Contato">
+					<i class="fas fa-envelope"></i>
+					Contato
+				</a>
+			</li>	
+			<li>
+				<a href="jogar.html" title="Jogar">
+					<i class="fas fa-gamepad"></i>
+					Jogar
+				</a>
+			</li>	
+
+			</ul>
+		</nav>
+	</header>
+
+	<div class="banner">
+		<img src="imagens/banner.jpg" alt="Banner" title="Banner">
+	</div>
+
+	<main>
+		<div class="sobregame">
+			<h1><i class="fas fa-search"></i> Sobre o Game</h1>
+				<p>Em um mundo inspirado em reinos antigos e terras geladas, um guerreiro solitário parte em uma jornada perigosa para resgatar sua irmã, sequestrada por bandidos impiedosos. Enfrentando criaturas, desafios e escolhas difíceis, ele precisará provar sua coragem para trazer sua família de volta — ou se perder no caminho.</p>
+	</div>
+
+		<div class="grid">
+			
+
+			<div class="coluna">
+				<img src="imagens/acesso.png" alt="O Dragonborn" title="O Dragonborn">
+				<p>O Dragonborn</p>
+				<p>
+					<a href="jogar.html" title="Detalhes" class="btn">
+						<i class="fas fa-gamepad"></i>
+						Jogar
+					</a>
+				</p>
+			</div>
+		</div>
+	</main>
+
+
+	<footer>
+		<p>Desenvolvido por Bruno Gabriel Rodrigues</p>
+		<p>
+			<a href="https://facebook.com" title="Facebook">
+				<i class="fab fa-facebook"></i>
+			</a>
+			<a href="https://instagram.com" title="Instagram">
+				<i class="fab fa-instagram"></i>
+			</a>
+			<a href="https://twitter.com" title="twitter">
+				<i class="fab fa-twitter"></i>
+			</a>
+		</p>
+	</footer>
+
+	<script>
+		function mostrarmenu() {
+			document.querySelector("header nav").classList.toggle("mostrar");
+		}
+	</script>
+</body>
+</html>

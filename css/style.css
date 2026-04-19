@@ -1,0 +1,212 @@
+body {
+	margin: 0;
+	font-family: Raleway, Arial;
+	font-size: 16px;
+	padding-top: 100px;
+
+}
+a {
+	text-decoration: none; /* tira sublinhado */
+	color: black;          /* deixa preto */
+}
+header {
+	width: 100%;
+	background: black;
+	padding: 10px;
+	box-sizing: border-box;
+
+	display: flex;                 /* ativa flex */
+	justify-content: space-between; /* separa esquerda/direita */
+	align-items: center;           /* alinha verticalmente */
+
+	position: fixed;
+	top: 0;
+}
+
+header nav ul {
+	list-style: none;
+}
+header nav ul li {
+	display: inline-block;
+	margin: 50px;
+	width: 100px;
+
+}
+header nav ul li a {
+	text-decoration: none;
+	color: white;
+	font-weight: 900;
+	transition: all 0.5s;
+}
+header nav ul li a:hover {
+	color:darkgrey;
+}
+.banner img {
+	width: 100%;
+}
+
+.sobregame p {
+	font-size: 30px;
+	color: gray;
+}
+
+header img{
+	width: 300px;
+}
+main h1, footer p {
+	text-align: center;
+	color: black;
+
+}
+main {
+	width: 1000px;
+	margin: auto;
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 33%);
+}
+.grid .coluna img {
+	width: 50%;
+	text-align: center;
+}
+.grid .coluna {
+	text-align: center;
+	border: 5px solid black;
+	border-radius: 50px;
+	margin: 10px;
+}
+.btn {
+	background: darkgrey;
+	text-decoration: none;
+	padding: 10px 30px;
+	color: black;
+	border-radius: 100px;
+	transition: all 0.5s;
+}
+.btn:hover {
+	background: black;
+	color: darkgrey;
+}
+footer {
+	background: white;
+	padding: 10px 0;
+}
+footer a {
+	background: white;
+	text-decoration: none;
+	margin: 20px;
+	color: black;
+	border-radius: 100px;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	line-height: 30px;
+	transition: all 0.5s;
+}
+footer a:hover {
+	background: black;
+	color: white;
+}
+.menu {
+	display: none;
+}
+.mostrar {
+	display: block;
+}
+
+@media (max-width: 420px) {
+
+	.banner {
+		display: none;
+	}
+
+	main {
+		width: 100%;
+	}
+
+	.grid {
+		grid-template-columns: 100%;
+	}
+
+	/* MENU ESCONDIDO */
+	header nav {
+		display: none;
+		width: 100%;
+		background: black;
+		position: absolute;
+		top: 100%; /* joga pra baixo do header */
+		left: 0;
+	}
+
+	/* QUANDO CLICA (classe .mostrar) */
+	header nav.mostrar {
+		display: block;
+	}
+
+	/* LISTA CENTRALIZADA */
+	header nav ul {
+		display: block;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	header nav ul li {
+		display: block;
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	header nav ul li a {
+		display: block;
+		padding: 10px;
+		color: white;
+	}
+
+	/* BOTÃO hamburguer */
+	.menu {
+		display: block;
+		border: 1px solid white;
+		padding: 10px 15px;
+		color: white;
+		border-radius: 5px;
+		margin-left: auto;
+	}
+
+	/* ajustar logo */
+	header img {
+		height: 100px;
+	}
+}
+form {
+	max-width: 500px;
+	margin: auto;
+	text-align: left;
+}
+
+form input,
+form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+form button {
+	width: 100%;
+	padding: 10px;
+	background: black;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+form button:hover {
+	background: darkgrey;
+}
